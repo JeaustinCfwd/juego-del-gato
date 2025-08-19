@@ -1,0 +1,134 @@
+* {
+ margin: 0;
+ box-sizing: border-box;
+user-select: none;
+color: white;
+}
+
+body {
+    background-color: #1a1a2e;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+ color: white;
+ margin: 0 20px;
+ font-size: 2rem;
+}
+
+#encabezado {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 20px;
+ margin-bottom: 20px;
+}
+
+.player {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-width: 120px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+main {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+#tablero
+{
+ border: 3px solid #0f3460;
+ border-radius: 15px;
+ display: grid;
+ grid-template-columns: repeat(3, 80px);
+ grid-template-rows: repeat(3, 80px);
+ gap: 15px;
+ padding: 20px;
+ background-color: #0f3460;
+}
+
+#tablero .celda {
+background: #17122A;
+ border-radius: 12px;
+ display: flex;
+align-items: center;
+justify-content: center;
+font-size: 36px;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s all ease;
+border: 2px solid transparent;
+}
+
+#tablero .celda:hover {
+  background: #2A2343;
+  transform: scale(1.05);
+}
+
+.botones-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#reinicioBtn {
+ width: 100px;
+ background: #17122A;
+ padding: 12px;
+ border: none;
+ border-radius: 12px;
+ font-weight: 600;
+ font-size: 16px;
+ cursor: pointer;
+ transition: 0.3s all ease;
+ color: white;
+}
+
+#reinicioBtn:hover {
+ background: #2A2343;
+ transform: translateY(-2px);
+}
+
+#Multijugador {
+ width: 120px;
+ background: #17122A;
+ padding: 12px;
+ border: none;
+ border-radius: 12px;
+ font-weight: 600;
+ font-size: 16px;
+ cursor: pointer;
+ transition: 0.3s all ease;
+ color: white;
+}
+
+#Multijugador:hover {
+  background: #2A2343;
+  transform: translateY(-2px);
+}
+
+#Bot {
+ width: 100px;
+ background: #17122A;
+ padding: 12px;
+ border: none;
+ border-radius: 12px;
+ font-weight: 600;
+ font-size: 16px;
+ cursor: pointer;
+ transition: 0.3s all ease;
+ color: white;
+}
+
+#Bot:hover {
+  background: #2A2343;
+  transform: translateY(-2px);
+}
