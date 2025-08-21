@@ -1,58 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Juego del Gato</title>
- <link rel="stylesheet" href="../estilos/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Gato</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
-<header id="encabezado">
-<div class="player" id="jugadorX"></div>
-<h3>Gato <img src="../imagenes/Gato_con_Botas.webp" alt="Gato con Botas"></h3>
-<div class="player" id="jugadorO"></div>
-</header>
-<main>
-<div class="juego-container">
-<div id="tablero">
-<div class="celda" data-index="0"></div>
-<div class="celda" data-index="1"></div>
-<div class="celda" data-index="2"></div>
-<div class="celda" data-index="3"></div>
-<div class="celda" data-index="4"></div>
-<div class="celda" data-index="5"></div>
-<div class="celda" data-index="6"></div>
-<div class="celda" data-index="7"></div>
-<div class="celda" data-index="8"></div>
-</div>
+    <header>
+        <div class="player" id="jugadorX"></div>
+        <h3>Gato <img src="../imagenes/Gato_con_Botas.webp" alt="Gato con Botas"></h3>
+        <div class="player" id="jugadorO"></div>
+    </header>
+    
+    <main>
+        <div class="juego-container">
+            <div id="tablero">
+                <div class="celda" data-index="0"></div>
+                <div class="celda" data-index="1"></div>
+                <div class="celda" data-index="2"></div>
+                <div class="celda" data-index="3"></div>
+                <div class="celda" data-index="4"></div>
+                <div class="celda" data-index="5"></div>
+                <div class="celda" data-index="6"></div>
+                <div class="celda" data-index="7"></div>
+                <div class="celda" data-index="8"></div>
+            </div>
+            
+            <div id="leaderboard">
+                <h3>Estadísticas</h3>
+                <ul>
+                    <li>Victorias X: <span id="victoriasX">0</span></li>
+                    <li>Victorias O: <span id="victoriasO">0</span></li>
+                    <li>Empates: <span id="empates">0</span></li>
+                </ul>
+                
+                <div class="movimientos-section">
+                    <h4>Movimientos</h4>
+                    <ul>
+                        <li>X: <span id="movimientosX">0</span> movimientos</li>
+                        <li>O: <span id="movimientosO">0</span> movimientos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="botones-container">
+            <button class="btn" id="reinicioBtn">Reiniciar</button>
+            <button class="btn" id="Multijugador">Multijugador</button>
+            <button class="btn" id="Bot">Bot</button>
+            <button class="btn" id="resetStats">Resetear Estadísticas</button>
+        </div>
+    </main>
 
-<div id="leaderboard">
-  <h3>Estadísticas</h3>
-  <ul>
-    <li>Victorias X: <span id="victoriasX">0</span></li>
-    <li>Victorias O: <span id="victoriasO">0</span></li>
-    <li>Empates: <span id="empates">0</span></li>
-  </ul>
-  
-  <div class="movimientos-section">
-    <h4>Movimientos</h4>
-    <ul>
-      <li>X: <span id="movimientosX">0</span> movimientos</li>
-      <li>O: <span id="movimientosO">0</span> movimientos</li>
-    </ul>
-  </div>
-</div>
-</div>
-
-<div class="botones-container">
-  <button class="btn" id="reinicioBtn">Reiniciar</button>
-  <button class="btn" id="Multijugador">Multijugador</button>
-  <button class="btn" id="Bot">Bot</button>
-  <button class="btn" id="resetStats">Resetear Estadísticas</button>
-</div>
-
-</main>
-
-<script src="../js/javascript.js"></script>
+    <script src="../js/javascript.js"></script>
 </body>
 </html>
